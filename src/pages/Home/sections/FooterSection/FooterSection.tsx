@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
   {
     name: "GitHub",
     icon: <FaGithub size={28} />,
-    url: "https://github.com/delberss",
+    url: "https://github.com/delberssoares",
   },
   {
     name: "Email",
