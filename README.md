@@ -68,7 +68,7 @@ my-portfolio/
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/delberss/my-portfolio.git
+git clone https://github.com/delberssoares/my-portfolio.git
 ```
 ### 2️⃣ Acesse a pasta do projeto
 ```bash

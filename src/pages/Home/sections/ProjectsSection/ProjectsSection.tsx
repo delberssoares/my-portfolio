@@ -63,7 +63,7 @@ const projects: ProjectCardProps[] = [
         ],
         description: "A mobile app with information about the main football clubs in Brazil, including titles and top scorers, with a feature that allows users to compare two clubs side by side.",
         technologies: "React Native, Expo, TypeScript",
-        websiteURL: "https://github.com/delberss/marketplace/blob/master/README.md",
+        websiteURL: "https://github.com/delberssoares/futebol-explorer/blob/main/README.md",
         codeURL: {
             mobile: "https://play.google.com/store/apps/details?id=com.delberss.dssapps"
         },
