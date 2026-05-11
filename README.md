@@ -1,7 +1,7 @@
 # 🌐 My Portfolio
 
 <p align="center">
-  <a href="https://delber-portfolio.vercel.app" target="_blank">
+  <a href="https://my-portfolio-delberss.vercel.app/" target="_blank">
     <img src="./public/images/preview.png" alt="Preview" width="600" />
   </a>
 </p>
@@ -9,7 +9,7 @@
 
 > Um portfólio moderno e responsivo desenvolvido com **React**, **TypeScript** e **Material UI**, destacando meus projetos, habilidades e informações de contato.
 
-🔗 **Acesse online:** [delber-portfolio.vercel.app](https://delber-portfolio.vercel.app)
+🔗 **Acesse online:** [https://my-portfolio-delberss.vercel.app/](https://my-portfolio-delberss.vercel.app/)
 
 ---
 
