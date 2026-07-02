@@ -69,6 +69,15 @@ const projects: ProjectCardProps[] = [
         },
         hasLivePreview: true
     },
+    {
+        title: "Zustand FC",
+        srcImages: ["/images/zustand-fc.png"],
+        description: "A football squad management app built to study advanced Zustand concepts, including store slices, immer middleware for nested state, undo/redo with zundo, async actions, drag and drop, and unit testing with Vitest.",
+        technologies: "React, TypeScript, Vite, Zustand, Immer, Zundo, Vitest",
+        websiteURL: "https://zustand-fc.vercel.app/",
+        codeURL: "https://github.com/delberssoares/zustand-fc",
+        hasLivePreview: true,
+    },
 ];
 
 
