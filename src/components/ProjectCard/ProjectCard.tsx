@@ -4,7 +4,9 @@ import {
   Typography,
   styled,
   IconButton,
-  Dialog
+  Dialog,
+  Chip,
+  Stack
 } from "@mui/material";
 import { useState, useEffect } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -39,6 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const [currentImage, setCurrentImage] = useState(0);
   const [open, setOpen] = useState(false);
+
+  const techList = technologies.split(",").map((tech) => tech.trim());
 
   const nextImage = () => {
     setCurrentImage((prev) =>
@@ -98,9 +102,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }));
 
   const StyledCard = styled("div")(({ theme }) => ({
-    borderRadius: "12px",
+    borderRadius: "16px",
     border: `1px solid ${theme.palette.secondary.main}`,
-    background: `linear-gradient(60deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.main} 40%, ${theme.palette.secondary.main} 120%)`,
+    backgroundColor: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
     padding: "20px",
     transition: "all 0.3s ease",
@@ -108,9 +112,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: "450px",
+    height: "480px",
     "&:hover": {
-      transform: "translateY(-6px) scale(1.01)",
+      transform: "translateY(-6px)",
       boxShadow: "0 8px 30px rgba(0,0,0,0.4)",
       borderColor: theme.palette.secondary.light,
     },
@@ -121,6 +125,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     overflowY: "auto",
     marginTop: theme.spacing(1),
     paddingRight: "6px",
+  }));
+
+  const TechChip = styled(Chip)(({ theme }) => ({
+    backgroundColor: "transparent",
+    border: `1px solid ${theme.palette.secondary.main}`,
+    color: theme.palette.secondary.main,
+    fontSize: "0.72rem",
+    fontWeight: 600,
+    height: "24px",
   }));
 
   return (
@@ -177,9 +190,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </DescriptionBox>
         </Box>
 
-        <Typography fontWeight={600} mt={1}>
-          Technologies: {technologies}
-        </Typography>
+        <Stack direction="row" flexWrap="wrap" gap={0.75} mt={1} mb={1}>
+          {techList.map((tech) => (
+            <TechChip key={tech} label={tech} size="small" variant="outlined" />
+          ))}
+        </Stack>
 
         <Grid container spacing={1} pt={1}>
 
