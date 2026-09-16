@@ -95,13 +95,12 @@ const projects: Project[] = [
         category: "mobile",
         title: "Futebol Explorer",
         srcImages: [
-            "/images/mobile/1.jpg",
-            "/images/mobile/2.jpg",
-            "/images/mobile/3.jpg",
-            "/images/mobile/4.jpg",
-            "/images/mobile/5.jpg",
-            "/images/mobile/6.jpg",
-            "/images/mobile/7.jpg",
+            "/images/mobile-futebol-explorer/tela1.jpg",
+            "/images/mobile-futebol-explorer/tela2.jpg",
+            "/images/mobile-futebol-explorer/tela3.jpg",
+            "/images/mobile-futebol-explorer/tela4.jpg",
+            "/images/mobile-futebol-explorer/tela5.jpg",
+            "/images/mobile-futebol-explorer/tela6.jpg",
         ],
         description: "A mobile app with information about the main football clubs in Brazil, including titles and top scorers, with a feature that allows users to compare two clubs side by side.",
         technologies: "React Native, Expo, TypeScript",
@@ -115,7 +114,17 @@ const projects: Project[] = [
     {
         category: "mobile",
         title: "HistoriQuiz",
-        srcImages: ["/images/mobile/historiquiz-1.jpg"],
+         srcImages: [
+            "/images/mobile-historiquiz/tela1.png",
+            "/images/mobile-historiquiz/tela2.png",
+            "/images/mobile-historiquiz/tela3.png",
+            "/images/mobile-historiquiz/tela4.png",
+            "/images/mobile-historiquiz/tela5.png",
+            "/images/mobile-historiquiz/tela6.png",
+            "/images/mobile-historiquiz/tela7.png",
+            "/images/mobile-historiquiz/tela8.png",
+            "/images/mobile-historiquiz/tela9.png",
+        ],
         description: "A quiz game where players identify historical figures from photos, built with React Native and Expo.",
         technologies: "React Native, Expo, TypeScript",
         websiteURL: "https://github.com/delberssoares/historiquiz/blob/main/README.md",
@@ -127,7 +136,17 @@ const projects: Project[] = [
     {
         category: "mobile",
         title: "TransformaPDF",
-        srcImages: ["/images/mobile/transformapdf-1.jpg"],
+         srcImages: [
+            "/images/mobile-transformaPDF/tela1.png",
+            "/images/mobile-transformaPDF/tela2.png",
+            "/images/mobile-transformaPDF/tela3.png",
+            "/images/mobile-transformaPDF/tela4.png",
+            "/images/mobile-transformaPDF/tela5.png",
+            "/images/mobile-transformaPDF/tela6.png",
+            "/images/mobile-transformaPDF/tela7.png",
+            "/images/mobile-transformaPDF/tela8.png",
+            "/images/mobile-transformaPDF/tela9.png",
+        ],
         description: "An app that converts images to PDF, reads PDF files, and merges multiple PDFs into one.",
         technologies: "React Native, Expo, TypeScript",
         websiteURL: "https://github.com/delberssoares/transformapdf/blob/main/README.md",
@@ -188,6 +207,7 @@ const ProjectsSection: React.FC = () => {
                                     websiteURL={project.websiteURL}
                                     codeURL={project.codeURL}
                                     hasLivePreview={project.hasLivePreview}
+                                    category={project.category}
                                 />
                             </AnimationComponent>
                         </Grid>
