@@ -3,6 +3,8 @@ import { Box, Container, Grid, Tabs, Tab, Typography, styled } from "@mui/materi
 import AnimationComponent from "../../../../components/AnimationComponent/AnimationComponent";
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
 import type { ProjectCardProps } from "../../../../components/ProjectCard/ProjectCard";
+import ComputerIcon from "@mui/icons-material/Computer";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 
 const StyledExperience = styled("div")(({ theme }) => ({
     color: theme.palette.primary.contrastText,
@@ -195,8 +197,8 @@ const ProjectsSection: React.FC = () => {
                         onChange={(_, value) => setTab(value)}
                         textColor="inherit"
                     >
-                        <StyledTab value="web" label="Web" />
-                        <StyledTab value="mobile" label="Mobile Apps" />
+                        <StyledTab value="web" label="Web" icon={<ComputerIcon fontSize="small" />} iconPosition="start" />
+                        <StyledTab value="mobile" label="Mobile Apps" icon={<PhoneIphoneIcon fontSize="small" />} iconPosition="start" />
                     </StyledTabs>
                 </Box>
 
