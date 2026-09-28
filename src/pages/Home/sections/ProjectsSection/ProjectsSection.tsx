@@ -114,7 +114,7 @@ const projects: Project[] = [
     {
         category: "mobile",
         title: "HistoriQuiz",
-         srcImages: [
+        srcImages: [
             "/images/mobile-historiquiz/tela1.png",
             "/images/mobile-historiquiz/tela2.png",
             "/images/mobile-historiquiz/tela3.png",
@@ -136,7 +136,7 @@ const projects: Project[] = [
     {
         category: "mobile",
         title: "TransformaPDF",
-         srcImages: [
+        srcImages: [
             "/images/mobile-transformaPDF/tela1.png",
             "/images/mobile-transformaPDF/tela2.png",
             "/images/mobile-transformaPDF/tela3.png",
@@ -158,7 +158,12 @@ const projects: Project[] = [
     {
         category: "mobile",
         title: "Gourmet Explorer",
-        srcImages: ["/images/mobile/gourmet-explorer-1.jpg"],
+        srcImages: [
+            "/images/mobile-gourmet/tela1.png",
+            "/images/mobile-gourmet/tela2.png",
+            "/images/mobile-gourmet/tela3.png",
+            "/images/mobile-gourmet/tela4.png",
+        ],
         description: "A suggestions app to help decide what to cook or eat next, built with React Native and Expo.",
         technologies: "React Native, Expo, TypeScript",
         websiteURL: "https://github.com/delberssoares/gourmet-explorer/blob/main/README.md",
