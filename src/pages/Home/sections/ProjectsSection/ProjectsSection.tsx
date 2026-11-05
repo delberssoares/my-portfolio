@@ -62,6 +62,19 @@ const projects: Project[] = [
     },
     {
         category: "web",
+        title: "Auto Parts",
+        srcImages: ["/images/auto-parts.png"],
+        description: "A full stack auto parts store, built with React and TypeScript on the frontend and FastAPI with PostgreSQL on the backend. It features a searchable catalog, a persistent cart, checkout with automatic address lookup by ZIP code, simulated payments, and order tracking with a status timeline. The admin panel manages products and the order queue (picking, shipping with tracking code, delivery, and cancellation). The API handles JWT authentication, password recovery, and atomic stock control.",
+        technologies: "React, TypeScript, Vite, Tailwind CSS, TanStack Query, Zustand, React Hook Form, Zod, Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic",
+        websiteURL: "https://auto-parts-frontend-ten.vercel.app/",
+        codeURL: {
+            frontend: "https://github.com/delberssoares/auto-parts-frontend",
+            backend: "https://github.com/delberssoares/auto-parts-backend"
+        },
+        hasLivePreview: true,
+    },
+    {
+        category: "web",
         title: "Text Analyzer",
         srcImages: ["/images/text-analyzer.png"],
         description: "A simple, modern, and responsive platform for text analysis, built with React, TypeScript, Styled Components, and Material UI, and integrated with a Python backend for data processing.",
